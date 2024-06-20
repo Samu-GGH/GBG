@@ -1,0 +1,79 @@
+---
+console.log("JS");
+---
+
+<header class="siteHeader">
+    <div class="idContainer">
+        <img class="headerLogo" src="/FCBlogo.png">
+        <h2 class="headerTitle">Grada Blaugrana</h2> 
+    </div> 
+    <nav class="links">
+        <a href="/ultimasNoticias">Ultimas Noticias</a>
+        <a href="/calendario">Calendario</a>
+        <a href="Multimedia">Multimedia</a>
+    </nav>
+</header>
+
+<style>
+    .siteHeader{
+        display: flex;
+        position: relative;
+        background: rgb(0, 0, 15);
+        height: 100px;
+        width: 100%;
+        padding: 5px 20px;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .idContainer{
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    .headerLogo{
+        display: inline-block;
+        position: relative;
+        height: 70px;
+        width: 70px;
+        margin: 0;
+    }
+    .headerTitle{
+        display: inline-block;
+        position: relative;
+        font-size: 50px;
+        color: #fff;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+    nav{
+        position: relative;
+    }
+    a{
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+        padding: 0;
+        color: #fff;
+        font-weight: bolder;
+        height: calc(100% - 1rem);
+        width: fit-content;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:after{
+	    content: "";
+    	position: absolute;
+	    background-color: #ffffff;
+	    width: 100%;
+    	transform: scale(0, 1);
+	    left: 0%;
+	    bottom: -1px;
+	    height: 3px;
+	    transition: 0.2s ease;
+    }
+    a:hover::after{
+	    transform: scale(1, 1);
+    }
+</style>
