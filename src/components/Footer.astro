@@ -1,0 +1,143 @@
+---
+console.log("JS");
+---
+
+<footer id="footer" class="footer-container">
+    <div class="contact-container">
+        <h4 class="contact-title">Grada Blaugrana</h4>
+        <div class="footer-contact_list">
+            <ul class="list-links_footer">
+                <li class="list-item"><a class="footer-link"><span class="first-child">Contacto </span></a></li>
+                <li class="list-item"><a class="footer-link"><span> Ayuda </span></a></li>
+                <li class="list-item"><a class="footer-link"><span> Aviso Legal </span></a></li>	
+                <li class="list-item"><a class="footer-link"><span> Politica de privacidad </span></a></li>
+                <li class="list-item"><a class="footer-link"><span> Lo más leido </span></a></li>   
+                <li class="list-item"><a class="footer-link"><span> Quienes Somos</span></a></li>    
+            </ul>
+        </div>
+    </div>
+    <p class="desingnedBy">©Todos los derechos reservados.</p>
+</footer>
+
+<style>
+.footer-container{
+	display: inline-flex;
+	position: relative;
+	background: rgb(0, 0, 15);
+	padding: 10px 0;
+	margin: 0;
+	height: 245px;
+    width: 100%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.contact-title{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: #ffffff;
+    font-size: 55px;
+    margin: 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.contact-container{
+	display:inline-flex;
+	position: relative;
+	height: 100%;
+    width: 95%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-content: start;
+}
+
+.footer-contact_list{
+	display: inline-block;
+	position: relative;
+    width: 90%;
+    margin: 20px 0 0 0;
+}
+
+footer span{
+	color: #999999;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 3px;
+	transition: .5s ease;
+}
+
+.list-links_footer{
+	display: inline-flex;
+    position: relative;
+    width: 100%;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.list-item{
+	display: inline-flex;
+	margin: 5px 0 2px 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-link{
+	position: relative;
+    padding: 0 10px;
+ 	text-decoration: none;
+ 	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+.footer-link:hover > span{
+	color: #ffffff;
+	transition: .5s ease;
+}
+
+.footer-link span::after, .first-child::before{
+	content: "";
+	position: absolute;
+	background-color: #999999;
+	height: 100%;
+	width: 2px;
+	right: 0;
+	bottom: 0;
+}
+
+.first-child::before{
+	left: 0;
+}
+
+.desingnedBy{
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	bottom: 5px;
+	right: 3px;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0
+}
+/*
+footer svg{
+	color: #999999;
+    height: 19px;
+	transition: .5s ease;
+    transform: translateY(3px);
+}
+
+.footer-link:hover > svg{
+	color: #ffffff;
+	transition: .5s ease;
+}
+*/
+</style>
